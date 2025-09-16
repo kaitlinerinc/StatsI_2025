@@ -1,6 +1,6 @@
 
 #welcome!
-
+n <- 5
 
 #load mtcars data
 

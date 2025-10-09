@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.2)  9 OCT 2025 23:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.2)  9 OCT 2025 23:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1011,7 +1011,7 @@ Package rerunfilecheck Info: File `PS01_answers_KC.out' has not changed.
 Here is how much of TeX's memory you used:
  27404 strings out of 468129
  482022 string characters out of 5430612
- 1183495 words of memory out of 5000000
+ 1183502 words of memory out of 5000000
  55442 multiletter control sequences out of 15000+600000
  637918 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1029,7 +1029,7 @@ y/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Use
 rs/unity/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pf
 b><C:/Users/unity/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmtt12.pfb>
-Output written on PS01_answers_KC.pdf (10 pages, 213300 bytes).
+Output written on PS01_answers_KC.pdf (10 pages, 213302 bytes).
 PDF statistics:
  198 PDF objects out of 1000 (max. 8388607)
  77 named destinations out of 1000 (max. 500000)

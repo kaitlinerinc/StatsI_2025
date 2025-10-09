@@ -92,7 +92,7 @@ A school counselor was curious about the average of IQ of the students in her sc
 
 \textbf{Finding a 90\% confidence interval}
 
-\noindent \underline{Step 1}: Calculate the sample mean. The sample mean equals the sum of the values divided by the number of values.
+\noindent \underline{Step 1}: Calculate the sample mean. The sample mean equals the sum of the values divided by the number of values in the sample (n).
 
 \lstinputlisting[language=R, firstline=52, lastline=56]{PS01_answers_KC.R}
 \begin{verbatim}
@@ -108,7 +108,7 @@ A school counselor was curious about the average of IQ of the students in her sc
 \noindent Add the squared values to find the sum of squares
 \lstinputlisting[language=R, firstline=65, lastline=65]{PS01_answers_KC.R}
 
-\noindent Find the variance by dividing the sum of squared by the degrees of freedom (the number of values minus 1)
+\noindent Find the variance by dividing the sum of squared by the degrees of freedom (the number of values in a sample (n) minus 1)
 
 \lstinputlisting[language=R, firstline=69, lastline=69]{PS01_answers_KC.R}  
 
@@ -124,17 +124,25 @@ A school counselor was curious about the average of IQ of the students in her sc
 
 \lstinputlisting[language=R, firstline=78, lastline=79]{PS01_answers_KC.R}  
 
-\noindent \underline{Step 4}: Calculate the t-score by inputting (1 minus the confidence coefficient divided by 2) and the degrees of freedom (n-1)
+\begin{verbatim}
+[1] 2.618575
+\end{verbatim}
 
+\newpage
+
+\noindent \underline{Step 4}: Calculate the t-score by inputting in R: 
+	\begin{itemize}
+\item (1 minus the confidence coefficient) divided by 2. Since we are finding a 90\% confidence interval, the confidence coefficient is 0.9, and 1 - 0.9 = 0.1. 
+\item The degrees of freedom (n-1)
+    \end{itemize}
+    
 \lstinputlisting[language=R, firstline=85, lastline=86]{PS01_answers_KC.R}  
 
 \begin{verbatim}
 [1] -1.710882
 \end{verbatim}
 
-\newpage
-
-\noindent \underline{Step 6}: Calculate the lower limit of the confidence interval by doing the sample mean + (t-score * standard error)
+\noindent \underline{Step 6}: Calculate the lower limit of the confidence interval by doing the sample mean - (the absolute value of the t-score * standard error)
 
 \lstinputlisting[language=R, firstline=91, lastline=92]{PS01_answers_KC.R}
 
@@ -165,9 +173,9 @@ A school counselor was curious about the average of IQ of the students in her sc
 \noindent \underline{Step 1}: Assumptions
 
 	\begin{itemize}
-	\item Due to the fact that n is less than 30, we cannot assume a normal distribution, so I will perform a t-test instead of a z-test
+	\item Due to the fact that n is less than 30, we cannot assume a normal distribution. So, I will perform a t-test instead of a z-test
 	
-	\item Data is continuous
+	\item The data is continuous
 	
 	\item The sample was random
 	\end{itemize}
@@ -175,7 +183,7 @@ A school counselor was curious about the average of IQ of the students in her sc
 \noindent \underline{Step 2}: State Hypotheses
 
 	\begin{itemize}
-\item Alternative Hypothesis: The average student IQ in the school counselor's school is higher than 100
+\item Alternative Hypothesis: The average student IQ in the school counselor's school is greater than 100
 
 \item Null Hypothesis: The average student IQ in the school counselor's school is less than or equal to 100 
 	\end{itemize}
@@ -192,10 +200,8 @@ A school counselor was curious about the average of IQ of the students in her sc
 
 \lstinputlisting[language=R, firstline=122, lastline=122]{PS01_answers_KC.R}
 
-
-
 \begin{verbatim}
-[1] -0.5957439
+[1] 0.7215383
 \end{verbatim}
 
 \noindent \textbf{Conclusion}: The calculated p value is greater than the critical value of 0.05.\break Therefore, we fail to reject the null hypothesis that the average student IQ in the school counselor's school is less than or equal to 100.
@@ -244,54 +250,56 @@ Please plot the relationship between \emph{Y} and \emph{X1}? Describe this graph
 
 \begin{figure}[!ht]
 	\caption{Plot of Y, X1, X2, and X3}
-	\includegraphics[width=1\textwidth]{US_Social_Welfare_Expenditures.png}
+	\includegraphics[width=\textwidth]{US_Social_Welfare_Expenditures.png}
 \end{figure}
 
-\item Per capita personal income in state (X1) and per capita expenditure on shelters/housing assistance in state (Y) are positively correlated. The form is moderately spread out. A correlation coefficient of 0.532 indicates that it is a moderate positive correlation.
+\item Per capita personal income in state (X1) and per capita expenditure on shelters/housing assistance in state (Y) are positively correlated. The form appears relatively linear, moderately spread out, and somewhat strong. A correlation coefficient of 0.532 indicates that it is a moderate positive correlation.
 
-\item Per capita expenditure on shelters/housing assistance in state (Y) is positively correlated with number of residents per 100,000 that are ”financially insecure” in state (X2). The form is relatively tight. The form appears to curve indicating that a linear measurement may be the best way of analyzing this data. A correlation coefficient of 0.448 indicates a moderate positive linear correlation
+\item Per capita expenditure on shelters/housing assistance in state (Y) is positively correlated with number of residents per 100,000 that are ”financially insecure” in state (X2). The correlation appears relatively strong as the points are relatively close together. The form appears to curve indicating that a linear measurement may be the best way of analyzing this data. A correlation coefficient of 0.448 indicates a moderate positive linear correlation.
 
-\item Per capita personal income in state (X1) is positively correlated with the number of residents per 100,000 that are ”financially insecure” in state (X2). The form is relatively spread out A correlation coefficient of 0.221 suggests there is a weak correlation.
+\item Per capita personal income in state (X1) is positively correlated with the number of residents per 100,000 that are ”financially insecure” in state (X2). The form is relatively spread out, and the strength appears rather weak. A correlation coefficient of 0.221 suggests there is a weak/negligible correlation.
 
-\item Per capita expenditure on shelters/housing assistance in state (Y) is positively correlated with the number of people per thousand residing in urban areas in state (X3). The form is moderately tight. A correlation coefficient of 0.464 suggests a moderate positive correlation.
+\item Per capita expenditure on shelters/housing assistance in state (Y) is positively correlated with the number of people per thousand residing in urban areas in state (X3). The form appears relatively linear and the data points are moderately close together. A correlation coefficient of 0.464 suggests a moderate positive correlation.
 
-\item Per capita personal income in state (X1) is positively correlated with the number of people per thousand residing in urban areas in state (X3). The distribution appears relatively tight. A correlation coefficient of 0.595 indicates a moderate positive association. This is the largest correlation coefficient and the tightest grouping that we see among variables in this data set.
+\item Per capita personal income in state (X1) is positively correlated with the number of people per thousand residing in urban areas in state (X3). The distribution appears relatively linear and moderately clustered together. A correlation coefficient of 0.595 indicates a moderate positive association. This is the largest correlation coefficient and the tightest grouping that we see among variables in this data set.
 
-\item The number of residents per 100,000 that are ”financially insecure” in state (X2) and the number of people per thousand residing in urban areas in state (X3) are positively correlated. The distribution appears very spread out. A correlation coefficient of 0.221 indicates a weak/negligible positive correlation.
+\item The number of residents per 100,000 that are ”financially insecure” in state (X2) and the number of people per thousand residing in urban areas in state (X3) are positively correlated. The distribution appears very spread out and there is no apparent pattern. A correlation coefficient of 0.221 indicates a weak/negligible positive correlation.
 \end{itemize}
 \newpage
 
 \noindent \textbf{Plotting the relationship between Y and Region}
 
-\lstinputlisting[language=R, firstline=176, lastline=180]{PS01_answers_KC.R}
+\lstinputlisting[language=R, firstline=177, lastline=182]{PS01_answers_KC.R}
 
 \begin{figure}[!h]
-	\caption{Plot of Expenditure on Housing Assistance by Region}
+	\caption{Plot of Y and Region}
 	\includegraphics[width=\textwidth]{Expenditure_By_Region.png}
 \end{figure}
 
-\noindent On average, the West has the highest per capita expenditure on housing assistance. The North Central region has the next highest average expenditure, followed by the Northeast. Lastly, the South has the lowest average per capita expenditure on housing assistance.
+\noindent On average, the West has the highest per capita expenditure on housing assistance. The North Central region has the next highest average housing assistance expenditure, followed by the Northeast. Lastly, the South has the lowest average per capita expenditure on housing assistance.
 
 \newpage
 
 \noindent \textbf{Plotting the relationship between Y and X1}
 
-\lstinputlisting[language=R, firstline=188, lastline=192]{PS01_answers_KC.R}
+\lstinputlisting[language=R, firstline=190, lastline=194]{PS01_answers_KC.R}
 
 \begin{figure}[!h]
-	\caption{Plot of Expenditure on Housing Assistance by Personal Income}
+	\caption{Plot of Y and X1}
 	\includegraphics[width=\textwidth]{Expenditure_By_Income.png}
 \end{figure}
 
+\noindent This graph appears to demonstrate a positive, moderately strong, and relatively linear correlation between per capita personal income in state (X1) and per capita expenditure on shelters/housing assistance in state (Y)
+
 \newpage
 
-\begin{figure}[!t]
-	\caption{Plot of Expenditure on Housing Assistance by Personal Income}
+\lstinputlisting[language=R, firstline=198, lastline=204]{PS01_answers_KC.R}
+
+\begin{figure}[!h]
+	\caption{Plot of Y, X1, and Region}
 	\includegraphics[width=\textwidth]{Expenditure_By_Income_With_Region.png}
 \end{figure}
 
-\noindent This graph suggests that the positive linear correlation between per capita personal income in state and per capita expenditure on shelters/housing in state may have region as a confounding variable. Some regions tend to have data points that are clustered together In particular the South has a grouping of points that have both low per capita personal income in state and low expenditure on shelter/housing assistance. This example highlights the danger of assuming a causal relationship based on correlation. 
-
-
+\noindent This graph suggests that the positive linear correlation between per capita personal income in state and per capita expenditure on housing in state may have region as a confounding variable. Some regional data points are clustered together. In particular, the South has a grouping of points that have both low per capita personal income in state and low expenditure on shelter/housing assistance. This example highlights the danger of assuming a causal relationship based on correlation, as this graph reveals a more complex relationship between the variables than it appeared from the graph of just X1 and Y1.
 
 \end{document}

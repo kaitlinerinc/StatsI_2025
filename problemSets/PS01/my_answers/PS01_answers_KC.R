@@ -82,19 +82,19 @@ standard_error_y
 #(1 minus the confidence coefficient divided by 2)
 #The degrees of freedom (n-1)
 
-t_score <- qt(p=(.1/2), n-1)
+t_score <- qt(p=(0.1/2), n-1)
 t_score
 
 # Step 6: Calculate the lower limit of the confidence interval
 # by doing the sample mean + (t-score * standard error)
 
-lower_limit <- mean(y) + (t_score * standard_error_y)
+lower_limit <- mean(y) - (abs(t_score) * standard_error_y)
 lower_limit
 
 # Step 7: Calculate the upper limit of the confidence interval
 # by doing the sample mean - (t-score * standard error)
 
-upper_limit <- mean(y) - (t_score * standard_error_y)
+upper_limit <- mean(y) + (abs(t_score) * standard_error_y)
 upper_limit
 
 #Conclusion: Based on the confidence interval, we are 90 
@@ -178,9 +178,8 @@ ggplot(expenditure) +
   theme_update(plot.title = element_text(hjust = 0.5)) +
   geom_boxplot(aes(x = as.factor(Region), y=Y)) +
   labs(x="Region", y="Per capita expenditure on shelters/housing assistance in state (Y)",
-  title = "Per Capita Expenditure on Shelters/Housing by Region") +
+  title = "Per Capita Expenditure on Shelters/Housing Assistance by Region") +
   scale_x_discrete(labels=c("1" = "Northeast", "2" = "North Central", "3" = "South", "4" = "West"))
-
 
 #On average, the West has the highest per capita expenditure on 
 #housing assistance. The North Central region has the next highest 
@@ -193,7 +192,6 @@ ggplot(expenditure, aes(x=X1, y=Y)) +
   labs(x="Per capita personal income in state (X1)", 
        y="Per capita expenditure on shelters/housing assistance in state (Y)", 
        title = "Personal Income and Expenditure on Housing Assistance")
-
 
 #Reproduce the above graph including one more variable Region and display
 #different regions with different types of symbols and colors.

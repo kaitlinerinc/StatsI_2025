@@ -165,7 +165,11 @@ A school counselor was curious about the average of IQ of the students in her sc
 \noindent \underline{Step 1}: Assumptions
 
 	\begin{itemize}
-	\item n is less than 30, so I will perform a t-test instead of a z-test. This is because I cannot assume a normal distribution
+	\item Due to the fact that n is less than 30, we cannot assume a normal distribution, so I will perform a t-test instead of a z-test
+	
+	\item Data is continuous
+	
+	\item The sample was random
 	\end{itemize}
 
 \noindent \underline{Step 2}: State Hypotheses
@@ -263,7 +267,7 @@ Please plot the relationship between \emph{Y} and \emph{X1}? Describe this graph
 
 \begin{figure}[!h]
 	\caption{Plot of Expenditure on Housing Assistance by Region}
-	\includegraphics[width=1\textwidth]{Expenditure_By_Region.png}
+	\includegraphics[width=\textwidth]{Expenditure_By_Region.png}
 \end{figure}
 
 \noindent On average, the West has the highest per capita expenditure on housing assistance. The North Central region has the next highest average expenditure, followed by the Northeast. Lastly, the South has the lowest average per capita expenditure on housing assistance.
@@ -276,9 +280,18 @@ Please plot the relationship between \emph{Y} and \emph{X1}? Describe this graph
 
 \begin{figure}[!h]
 	\caption{Plot of Expenditure on Housing Assistance by Personal Income}
-	\includegraphics[width=1\textwidth]{Expenditure_By_Income.png}
+	\includegraphics[width=\textwidth]{Expenditure_By_Income.png}
 \end{figure}
 
-\noindent \textbf{Plotting the relationship between Y, X1, and Region}
+\newpage
+
+\begin{figure}[!t]
+	\caption{Plot of Expenditure on Housing Assistance by Personal Income}
+	\includegraphics[width=\textwidth]{Expenditure_By_Income_With_Region.png}
+\end{figure}
+
+\noindent This graph suggests that the positive linear correlation between per capita personal income in state and per capita expenditure on shelters/housing in state may have region as a confounding variable. Some regions tend to have data points that are clustered together In particular the South has a grouping of points that have both low per capita personal income in state and low expenditure on shelter/housing assistance. This example highlights the danger of assuming a causal relationship based on correlation. 
+
+
 
 \end{document}

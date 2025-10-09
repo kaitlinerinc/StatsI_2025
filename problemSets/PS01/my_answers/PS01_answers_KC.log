@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.2)  9 OCT 2025 11:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.2)  9 OCT 2025 20:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -956,7 +956,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--158
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 179--180
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
 
  []
 
@@ -969,7 +969,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 179--180
 File: US_Social_Welfare_Expenditures.png Graphic file (type png)
 <use US_Social_Welfare_Expenditures.png>
 Package pdftex.def Info: US_Social_Welfare_Expenditures.png  used on input line
- 243.
+ 247.
 (pdftex.def)             Requested size: 469.75502pt x 334.9536pt.
 
 
@@ -979,19 +979,28 @@ Package pdftex.def Info: US_Social_Welfare_Expenditures.png  used on input line
 <Expenditure_By_Region.png, id=91, 606.46574pt x 432.4155pt>
 File: Expenditure_By_Region.png Graphic file (type png)
 <use Expenditure_By_Region.png>
-Package pdftex.def Info: Expenditure_By_Region.png  used on input line 266.
+Package pdftex.def Info: Expenditure_By_Region.png  used on input line 270.
 (pdftex.def)             Requested size: 469.75502pt x 334.9536pt.
 
 
 [8 <./Expenditure_By_Region.png>] (PS01_answers_KC.R)
-<Expenditure_By_Income.png, id=104, 606.46574pt x 432.4155pt>
+<Expenditure_By_Income.png, id=104, 575.751pt x 432.4155pt>
 File: Expenditure_By_Income.png Graphic file (type png)
 <use Expenditure_By_Income.png>
-Package pdftex.def Info: Expenditure_By_Income.png  used on input line 279.
-(pdftex.def)             Requested size: 469.75502pt x 334.9536pt.
+Package pdftex.def Info: Expenditure_By_Income.png  used on input line 283.
+(pdftex.def)             Requested size: 469.75502pt x 352.8213pt.
 
 
-[9 <./Expenditure_By_Income.png>] (PS01_answers_KC.aux)
+[9 <./Expenditure_By_Income.png>]
+<Expenditure_By_Income_With_Region.png, id=117, 540.21825pt x 335.45325pt>
+File: Expenditure_By_Income_With_Region.png Graphic file (type png)
+<use Expenditure_By_Income_With_Region.png>
+Package pdftex.def Info: Expenditure_By_Income_With_Region.png  used on input l
+ine 290.
+(pdftex.def)             Requested size: 469.75502pt x 291.71399pt.
+
+
+[10 <./Expenditure_By_Income_With_Region.png>] (PS01_answers_KC.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
@@ -1000,10 +1009,10 @@ Package rerunfilecheck Info: File `PS01_answers_KC.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 27377 strings out of 468129
- 481384 string characters out of 5430612
+ 27389 strings out of 468129
+ 481734 string characters out of 5430612
  1150495 words of memory out of 5000000
- 55428 multiletter control sequences out of 15000+600000
+ 55438 multiletter control sequences out of 15000+600000
  637918 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,6n,91p,3249b,2131s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1020,9 +1029,9 @@ y/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Use
 rs/unity/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pf
 b><C:/Users/unity/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmtt12.pfb>
-Output written on PS01_answers_KC.pdf (9 pages, 194663 bytes).
+Output written on PS01_answers_KC.pdf (10 pages, 207480 bytes).
 PDF statistics:
- 180 PDF objects out of 1000 (max. 8388607)
- 66 named destinations out of 1000 (max. 500000)
- 28 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 188 PDF objects out of 1000 (max. 8388607)
+ 68 named destinations out of 1000 (max. 500000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

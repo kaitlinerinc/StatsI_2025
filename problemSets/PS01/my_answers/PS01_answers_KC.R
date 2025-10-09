@@ -173,11 +173,14 @@ ggpairs(data=expenditure, columns = 2:5, title = "U.S. Social Welfare Expenditur
 #0.221 indicates a weak/negligible positive correlation.
 
 #Plot the relationship between Y and Region
-ggplot(expenditure) +
-  geom_boxplot(aes(x = as.factor(expenditure$Region), y=expenditure$Y)) +
+
+ggplot(expenditure) + 
+  theme_update(plot.title = element_text(hjust = 0.5)) +
+  geom_boxplot(aes(x = as.factor(Region), y=Y)) +
   labs(x="Region", y="Per capita expenditure on shelters/housing assistance in state (Y)",
   title = "Per Capita Expenditure on Shelters/Housing by Region") +
   scale_x_discrete(labels=c("1" = "Northeast", "2" = "North Central", "3" = "South", "4" = "West"))
+
 
 #On average, the West has the highest per capita expenditure on 
 #housing assistance. The North Central region has the next highest 
@@ -185,16 +188,20 @@ ggplot(expenditure) +
 #has the lowest average per capita expenditure on housing assistance.
 
 #Please plot the relationship between Y and X1
-ggplot(expenditure) +
-  geom_point(aes(x=X1, y=Y)) +
-  labs(x="Per capita personal income in state (X1)", 
-       y="Per capita expenditure on shelters/housing assistance in state (Y)",
-       title = "Personal Income and Expenditure on Housing Assistance")
-
-#Reproduce the above graph including one more variable Region and display
-#different regions with different types of symbols and colors.
-ggplot(expenditure) +
-  geom_point(aes(x=X1, y=Y, mapping = aes())) +
+ggplot(expenditure, aes(x=X1, y=Y)) +
+  geom_point(size=2) +
   labs(x="Per capita personal income in state (X1)", 
        y="Per capita expenditure on shelters/housing assistance in state (Y)", 
        title = "Personal Income and Expenditure on Housing Assistance")
+
+
+#Reproduce the above graph including one more variable Region and display
+#different regions with different types of symbols and colors.
+ggplot(expenditure, aes(x=X1, y=Y, color=factor(Region), shape=factor(Region))) +
+  geom_point(size=2.5) +
+  labs(x="Per capita personal income in state (X1)", 
+       y="Per capita expenditure on shelters/housing assistance in state (Y)", 
+       title = "Personal Income and Expenditure on Housing Assistance") +
+  scale_shape_manual(name = "Region", values = c(17, 18, 19, 20), labels = c("Northeast", "North Central", "South", "West")) +
+  scale_color_manual(name = "Region", values = c(17, 18, 19, 20), labels = c("Northeast", "North Central", "South", "West"))
+

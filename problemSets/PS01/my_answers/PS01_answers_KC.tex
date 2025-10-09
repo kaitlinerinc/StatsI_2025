@@ -142,7 +142,7 @@ A school counselor was curious about the average of IQ of the students in her sc
 [1] -1.710882
 \end{verbatim}
 
-\noindent \underline{Step 6}: Calculate the lower limit of the confidence interval by doing the sample mean - (the absolute value of the t-score * standard error)
+\noindent \underline{Step 6}: Calculate the lower limit of the confidence interval by calculating the sample mean - (the absolute value of the t-score * standard error)
 
 \lstinputlisting[language=R, firstline=91, lastline=92]{PS01_answers_KC.R}
 
@@ -150,7 +150,7 @@ A school counselor was curious about the average of IQ of the students in her sc
 [1] 93.95993
 \end{verbatim}
 
-\noindent \underline{Step 7}: Calculate the upper limit of the confidence interval by doing the sample mean - (t-score * standard error)
+\noindent \underline{Step 7}: Calculate the upper limit of the confidence interval by calculating the sample mean + (the absolute value of the t-score * standard error)
 
 \lstinputlisting[language=R, firstline=97, lastline=98]{PS01_answers_KC.R}
 
@@ -196,7 +196,7 @@ A school counselor was curious about the average of IQ of the students in her sc
 [1] -0.5957439
 \end{verbatim}
 
-\noindent \underline{Step 4}: Calculate the p-value by inputting the test statistic and the degrees of freedom (sample size - 1). lower.tail = FALSE was used because it is a one-sided hypothesis in which we are examining the upper tail of the curve.
+\noindent \underline{Step 4}: Calculate the p-value by inputting the test statistic and the degrees of freedom (sample size - 1). lower.tail = FALSE was used because it is a one-sided hypothesis test in which we are examining the upper tail of the curve.
 
 \lstinputlisting[language=R, firstline=122, lastline=122]{PS01_answers_KC.R}
 
@@ -204,7 +204,7 @@ A school counselor was curious about the average of IQ of the students in her sc
 [1] 0.7215383
 \end{verbatim}
 
-\noindent \textbf{Conclusion}: The calculated p value is greater than the critical value of 0.05.\break Therefore, we fail to reject the null hypothesis that the average student IQ in the school counselor's school is less than or equal to 100.
+\noindent \textbf{Conclusion}: The calculated p-value is greater than the critical value of 0.05.\break Therefore, we fail to reject the null hypothesis that the average student IQ in the school counselor's school is less than or equal to 100.
 
 \end{enumerate}
 

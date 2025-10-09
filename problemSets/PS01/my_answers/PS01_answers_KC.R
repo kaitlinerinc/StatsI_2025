@@ -43,9 +43,9 @@ y <- c(105, 69, 86, 100, 82, 111, 104, 110, 87, 108, 87, 90, 94, 113, 112, 98, 8
 
 #Question 1: Education
 
-y <- c(105, 69, 86, 100, 82, 111, 104, 110, 87, 108, 87, 90, 94, 113, 112, 98, 80, 97, 95, 111, 114, 89, 95, 126, 98)
 
-# Steps to make a confidence interval for y
+
+
 
 #Step 1: Calculate the sample mean. 
 #The sample mean equals the sum of the values divided by the number of values.
@@ -55,7 +55,7 @@ mean_y <- sum(y)/n
 #or you can use the mean function
 mean(y)
 
-#Step 2: Begin Calculating the standard deviation by finding how much each data 
+#Step 2: Begin calculating the standard deviation by finding how much each data 
 #point differs from the mean and squaring each value.
 distance_from_mean <- y - mean(y)
 
@@ -86,13 +86,13 @@ t_score <- qt(p=(0.1/2), n-1)
 t_score
 
 # Step 6: Calculate the lower limit of the confidence interval
-# by doing the sample mean + (t-score * standard error)
+# by doing the sample mean - (absolute value of t-score * standard error)
 
 lower_limit <- mean(y) - (abs(t_score) * standard_error_y)
 lower_limit
 
 # Step 7: Calculate the upper limit of the confidence interval
-# by doing the sample mean - (t-score * standard error)
+# by doing the sample mean + (absolute value of t-score * standard error)
 
 upper_limit <- mean(y) + (abs(t_score) * standard_error_y)
 upper_limit
@@ -134,10 +134,10 @@ expenditure <- read.table("https://raw.githubusercontent.com/ASDS-TCD/StatsI_202
 
 #Question 2: Political Economy
 
-#form/pattern
-#direction
-#strength
-#outliers
+
+
+
+
 
 #Plot the relationships among Y, X1, X2, and X3?
 expenditure <- read.table("https://raw.githubusercontent.com/ASDS-TCD/StatsI_2025/main/datasets/expenditure.txt", header=T)

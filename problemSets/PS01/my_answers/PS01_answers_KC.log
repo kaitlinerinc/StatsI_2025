@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.2)  9 OCT 2025 23:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.2)  9 OCT 2025 23:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -979,7 +979,7 @@ Package pdftex.def Info: US_Social_Welfare_Expenditures.png  used on input line
 <Expenditure_By_Region.png, id=91, 576.35326pt x 432.4155pt>
 File: Expenditure_By_Region.png Graphic file (type png)
 <use Expenditure_By_Region.png>
-Package pdftex.def Info: Expenditure_By_Region.png  used on input line 276.
+Package pdftex.def Info: Expenditure_By_Region.png  used on input line 278.
 (pdftex.def)             Requested size: 469.75502pt x 352.43861pt.
 
 
@@ -987,7 +987,7 @@ Package pdftex.def Info: Expenditure_By_Region.png  used on input line 276.
 <Expenditure_By_Income.png, id=105, 576.35326pt x 494.44725pt>
 File: Expenditure_By_Income.png Graphic file (type png)
 <use Expenditure_By_Income.png>
-Package pdftex.def Info: Expenditure_By_Income.png  used on input line 289.
+Package pdftex.def Info: Expenditure_By_Income.png  used on input line 291.
 (pdftex.def)             Requested size: 469.75502pt x 402.99736pt.
 
 
@@ -996,7 +996,7 @@ Package pdftex.def Info: Expenditure_By_Income.png  used on input line 289.
 File: Expenditure_By_Income_With_Region.png Graphic file (type png)
 <use Expenditure_By_Income_With_Region.png>
 Package pdftex.def Info: Expenditure_By_Income_With_Region.png  used on input l
-ine 300.
+ine 302.
 (pdftex.def)             Requested size: 469.75502pt x 352.43861pt.
 
 
@@ -1029,7 +1029,7 @@ y/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Use
 rs/unity/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pf
 b><C:/Users/unity/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmtt12.pfb>
-Output written on PS01_answers_KC.pdf (10 pages, 213347 bytes).
+Output written on PS01_answers_KC.pdf (10 pages, 213300 bytes).
 PDF statistics:
  198 PDF objects out of 1000 (max. 8388607)
  77 named destinations out of 1000 (max. 500000)

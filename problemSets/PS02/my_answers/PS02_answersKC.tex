@@ -277,7 +277,7 @@ Lower Class         7.5        4.642857              2.857143
 	
 		\noindent \textbf{Step 2: Run a bivariate regression}
 	
-		\noindent Use the lm function in R to run the regression, I subset two columns from the \break original data set to input only the two variables that I am investigating the relationship between, reserved and water. With reserved as the explanatory variable and water as the response variable.
+		\noindent Use the lm function in R to run the regression, I subset two columns from the \newline original data set to input only the two variables that I am investigating the relationship between, reserved and water. With reserved as the explanatory variable and water as the response variable.
 		
 		\lstinputlisting[language=R, firstline=96, lastline=98]{PS02_answersKC.R}  
 		
@@ -321,13 +321,8 @@ F-statistic: 5.493 on 1 and 320 DF,  p-value: 0.0197
 
         \noindent \textbf {Interpret the coefficients}
         
-   \begin{itemize}     
-        \item A coefficient estimate of 9.252 suggests that for a one unit increase in reservation policy (in this case a one unit increase represents going from no reservation policy to having a reservation policy) there is a 9.252 increase in the number of new or repaired drinking water facilities in the village
-        
-        \item A p-value of 0.0197 is less than the critical value of 0.05, indicating that we can reject the null hypothesis that there is no relationship between reservation policy and the number of drinking water facilities
-        
-        \item A y-intercept of 14.738 suggests that we predict 14.738 new or repaired drinking-water facilities when there is no reservation policy in place.
-    \end{itemize}
+
+        \noindent The coefficient estimate for reservation policy of 9.252 is positive, suggesting a positive linear association between reservation policy and new or repaired water facilities. The coefficient estimate of 9.252 indicates that for a one unit increase in reservation policy (in this case a one unit increase represents going from no reservation policy to having a reservation policy) there is a 9.252 increase in the number of new or repaired drinking water facilities in the village
     	
 	\end{enumerate}
 

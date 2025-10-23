@@ -99,5 +99,3 @@ bivariate_regression
 
 summary(bivariate_regression)
 
-?summary
-plot(bivariate_regression)

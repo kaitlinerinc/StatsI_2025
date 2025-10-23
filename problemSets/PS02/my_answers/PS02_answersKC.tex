@@ -101,15 +101,16 @@
 		
 		\noindent \textbf{Step 1: Put the data in R and calculate the totals}
 		
-		\noindent First I put the tabular data into a matrix in R and added the totals row and column. I labeled the matrix the same way the original table was labeled.
+		\noindent First I put the tabular data into a matrix. The table without totals or labels was named observed\_table. Then I added the row and column totals and labeled the matrix the same way the original table was labeled. I named the table with the totals and labels class\_table
 		
 		\lstinputlisting[language=R, firstline=7, lastline=28]{PS02_answersKC.R}  
 	
 	\begin{center}
 		\begin{verbatim}
-            Not Stopped Bribe Requested Stoped/Given Warning
-Upper Class        13.5        8.357143             5.142857
-Lower Class         7.5        4.642857             2.857143
+             Not Stopped Bribe Requested Stoped/Given Warning Row Total
+Upper Class           14               6                    7        27
+Lower Class            7               7                    1        15
+Column Total          21              13                    8        42
 		\end{verbatim}
 	\end{center}
 		
@@ -186,7 +187,7 @@ Lower Class         7.5        4.642857              2.857143
 		
 		\noindent \textbf{Step 8: Calculate the standardized residuals}
 		
-		\noindent Calculate the standardized residuals by doing the observed minus the expected values divided by the square root of the expected frequency * (1 - the row proportion) * (1 - the column proportion)
+		\noindent Calculate the standardized residuals by doing the observed minus the expected values divided by the square root of the (expected frequency * (1 - the row proportion) * (1 - the column proportion))
 		
 		\vspace{1cm}
 		
@@ -243,7 +244,7 @@ Lower Class         7.5        4.642857              2.857143
 		
 		\vspace{.5cm}
 		
-		\noindent Since none of out standard residuals have an absolute value over 2, we can determine that there are no values significantly outside of what we would expect based on our null hypothesis that the variables are statistically independent. This agrees with the information from our p-value that we cannot reject the null hypothesis that the variables are statistically independent. 
+		\noindent Since none of our standard residuals have an absolute value over 2, we can determine that there are no values significantly outside of what we would expect based on our null hypothesis that the variables are statistically independent. This agrees with the \break information from our p-value that we cannot reject the null hypothesis that the \break variables are statistically independent. 
 		
 	\end{enumerate}
 	\newpage
@@ -268,15 +269,15 @@ Lower Class         7.5        4.642857              2.857143
 		\item [(a)] State a null and alternative (two-tailed) hypothesis. 
 		
 	\noindent \textbf{Step 1: State Hypotheses}
-	\item Null hypothesis: the reservation policy has no affect on the number of drinking water facilities
-    \item Alternative hypothesis: the reservation policy has an affect on the number of drinking water facilities
+	\item Null hypothesis: the reservation policy has no correlation with the number of drinking water facilities
+    \item Alternative hypothesis: the reservation policy has a correlation with the number of drinking water facilities
 
 		\vspace{1cm}
 		\item [(b)] Run a bivariate regression to test this hypothesis in \texttt{R} (include your code!).
 	
 		\noindent \textbf{Step 2: Run a bivariate regression}
 	
-		\noindent Use the lm function in R to run the regression, I subset two columns from the original data set to input only the two variables that I am investigating the relationship between, reserved and water.
+		\noindent Use the lm function in R to run the regression, I subset two columns from the \break original data set to input only the two variables that I am investigating the relationship between, reserved and water. With reserved as the explanatory variable and water as the response variable.
 		
 		\lstinputlisting[language=R, firstline=96, lastline=98]{PS02_answersKC.R}  
 		
@@ -325,7 +326,7 @@ F-statistic: 5.493 on 1 and 320 DF,  p-value: 0.0197
         
         \item A p-value of 0.0197 is less than the critical value of 0.05, indicating that we can reject the null hypothesis that there is no relationship between reservation policy and the number of drinking water facilities
         
-        \item A y-intercept of 14.738 suggests that there are an average of 14.738 new or repaired drinking-water facilities when there is no reservation policy in place.
+        \item A y-intercept of 14.738 suggests that we predict 14.738 new or repaired drinking-water facilities when there is no reservation policy in place.
     \end{itemize}
     	
 	\end{enumerate}

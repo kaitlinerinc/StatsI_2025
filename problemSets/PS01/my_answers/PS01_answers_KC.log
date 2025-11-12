@@ -1,6 +1,7 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.2)  9 OCT 2025 23:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=latex 2025.10.2)  8 NOV 2025 22:13
 entering extended mode
  restricted \write18 enabled.
+ Source specials enabled.
  %&-line parsing enabled.
 **./PS01_answers_KC.tex
 (PS01_answers_KC.tex
@@ -40,10 +41,10 @@ Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
 fg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 106.
+Package graphics Info: Driver file: dvips.def on input line 106.
 
-(C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
-File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+(C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\dvips.def
+File: dvips.def 2022/09/22 v3.1e Graphics/color driver for dvips
 ))
 \Gin@req@height=\dimen149
 \Gin@req@width=\dimen150
@@ -70,7 +71,10 @@ Package: color 2025/01/14 v1.3e Standard LaTeX Color (DPC)
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package color Info: Driver file: pdftex.def on input line 149.
+Package color Info: Driver file: dvips.def on input line 149.
+(C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/latex/graphics\dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+)
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
 ) (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2025/06/16 v2.17y AMS math features
@@ -283,19 +287,7 @@ Package: xy 2013/10/06 Xy-pic version 3.8.9
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xyarrow.tex
  Xy-pic option: Arrow and Path feature v.3.9 path, \ar, loaded)
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xygraph.tex
- Xy-pic option: Graph feature v.3.11 loaded) loaded)
-(C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xypdf.tex
- Xy-pic option: PDF driver v.1.7 Xy-pic pdf driver: `color' extension support
-(C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xypdf-co.tex
-loaded) Xy-pic pdf driver: `curve' extension support
-(C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xypdf-cu.tex
-loaded) Xy-pic pdf driver: `frame' extension support
-(C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xypdf-fr.tex
-loaded) Xy-pic pdf driver: `line' extension support
-(C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xypdf-li.tex
-loaded) Xy-pic pdf driver: `rotate' extension support
-(C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xypdf-ro.tex
-loaded) loaded))
+ Xy-pic option: Graph feature v.3.11 loaded) loaded))
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/latex/endnotes\endnotes.sty
 Package: endnotes 2020-01-02 endnotes package
 \c@endnote=\count309
@@ -343,7 +335,7 @@ Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
+Package pdftexcmds Info: \pdfdraftmode is ignored in DVI mode.
 ))
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
@@ -426,12 +418,20 @@ Package hyperref Info: PDF/A mode OFF on input line 6108.
 \c@Item=\count320
 \c@Hfootnote=\count321
 )
-Package hyperref Info: Driver (autodetected): hpdftex.
+Package hyperref Info: Driver (default): hdvips.
 
-(C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
-File: hpdftex.def 2025-07-12 v7.01o Hyperref driver for pdfTeX
-\Fld@listcount=\count322
-\c@bookmark@seq@number=\count323
+(C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hdvips.def
+File: hdvips.def 2025-07-12 v7.01o Hyperref driver for dvips
+
+(C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pdfmark.def
+File: pdfmark.def 2025-07-12 v7.01o Hyperref definitions for pdfmark specials
+\pdf@docset=\toks39
+\pdf@box=\box62
+\pdf@toks=\toks40
+\pdf@defaulttoks=\toks41
+\HyField@AnnotCount=\count322
+\Fld@listcount=\count323
+\c@bookmark@seq@number=\count324
 
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
 echeck.sty
@@ -445,22 +445,22 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 84.
 )
 \Hy@SectionHShift=\skip60
-)
-\c@lem=\count324
-\c@prop=\count325
-\c@thm=\count326
-\c@defn=\count327
-\c@cor=\count328
-\c@obs=\count329
+))
+\c@lem=\count325
+\c@prop=\count326
+\c@thm=\count327
+\c@defn=\count328
+\c@cor=\count329
+\c@obs=\count330
 
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
-\ttl@box=\box62
+\ttl@box=\box63
 \beforetitleunit=\skip61
 \aftertitleunit=\skip62
 \ttl@plus=\dimen199
 \ttl@minus=\dimen256
-\ttl@toksa=\toks39
+\ttl@toksa=\toks42
 \titlewidth=\dimen257
 \titlewidthlast=\dimen258
 \titlewidthfirst=\dimen259
@@ -471,12 +471,12 @@ Package: dcolumn 2023/07/08 v1.06 decimal alignment package (DPC)
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
 \col@sep=\dimen260
-\ar@mcellbox=\box63
+\ar@mcellbox=\box64
 \extrarowheight=\dimen261
-\NC@list=\toks40
+\NC@list=\toks43
 \extratabsurround=\skip63
 \backup@length=\skip64
-\ar@cellbox=\box64
+\ar@cellbox=\box65
 ))
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.
 sty
@@ -485,13 +485,13 @@ sty
 y
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
 -common.tex
-\pgfutil@everybye=\toks41
+\pgfutil@everybye=\toks44
 \pgfutil@tempdima=\dimen262
 \pgfutil@tempdimb=\dimen263
 )
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
 -latex.def
-\pgfutil@abb=\box65
+\pgfutil@abb=\box66
 )
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
 code.tex
@@ -510,12 +510,12 @@ Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
 
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
 .code.tex
-\pgfkeys@pathtoks=\toks42
-\pgfkeys@temptoks=\toks43
+\pgfkeys@pathtoks=\toks45
+\pgfkeys@temptoks=\toks46
 
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
 libraryfiltered.code.tex
-\pgfkeys@tmptoks=\toks44
+\pgfkeys@tmptoks=\toks47
 ))
 \pgf@x=\dimen264
 \pgf@y=\dimen265
@@ -529,34 +529,35 @@ libraryfiltered.code.tex
 \pgf@yd=\dimen273
 \w@pgf@writea=\write6
 \r@pgf@reada=\read4
-\c@pgf@counta=\count330
-\c@pgf@countb=\count331
-\c@pgf@countc=\count332
-\c@pgf@countd=\count333
-\t@pgf@toka=\toks45
-\t@pgf@tokb=\toks46
-\t@pgf@tokc=\toks47
-\pgf@sys@id@count=\count334
+\c@pgf@counta=\count331
+\c@pgf@countb=\count332
+\c@pgf@countc=\count333
+\c@pgf@countd=\count334
+\t@pgf@toka=\toks48
+\t@pgf@tokb=\toks49
+\t@pgf@tokc=\toks50
+\pgf@sys@id@count=\count335
 
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
 fg
 File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
 )
-Driver file for pgf: pgfsys-pdftex.def
+Driver file for pgf: pgfsys-dvips.def
 
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
-s-pdftex.def
-File: pgfsys-pdftex.def 2025-08-29 v3.1.11a (3.1.11a)
+s-dvips.def
+File: pgfsys-dvips.def 2025-08-29 v3.1.11a (3.1.11a)
 
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
-s-common-pdf.def
-File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
+s-common-postscript.def
+File: pgfsys-common-postscript.def 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@objectcount=\count336
 )))
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 ssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfsyssoftpath@smallbuffer@items=\count335
-\pgfsyssoftpath@bigbuffer@items=\count336
+\pgfsyssoftpath@smallbuffer@items=\count337
+\pgfsyssoftpath@bigbuffer@items=\count338
 )
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 sprotocol.code.tex
@@ -568,11 +569,10 @@ Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 274.
+Package xcolor Info: Driver file: dvips.def on input line 274.
 LaTeX Info: Redefining \color on input line 762.
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1365.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
@@ -592,11 +592,11 @@ code.tex)
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
 r.code.tex
 \pgfmath@dimen=\dimen274
-\pgfmath@count=\count337
-\pgfmath@box=\box66
-\pgfmath@toks=\toks48
-\pgfmath@stack@operand=\toks49
-\pgfmath@stack@operation=\toks50
+\pgfmath@count=\count339
+\pgfmath@box=\box67
+\pgfmath@toks=\toks51
+\pgfmath@stack@operand=\toks52
+\pgfmath@stack@operation=\toks53
 )
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
 ions.code.tex)
@@ -620,7 +620,7 @@ ions.integerarithmetics.code.tex)
 code.tex)
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
 .code.tex
-\c@pgfmathroundto@lastzeros=\count338
+\c@pgfmathroundto@lastzeros=\count340
 ))
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
 tex)
@@ -657,10 +657,10 @@ File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 escopes.code.tex
 File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfpic=\box67
-\pgf@hbox=\box68
-\pgf@layerbox@main=\box69
-\pgf@picture@serial@count=\count339
+\pgfpic=\box68
+\pgf@hbox=\box69
+\pgf@layerbox@main=\box70
+\pgf@picture@serial@count=\count341
 )
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 egraphicstate.code.tex
@@ -695,8 +695,8 @@ File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 eshade.code.tex
 File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@max=\dimen298
-\pgf@sys@shading@range@num=\count340
-\pgf@shadingcount=\count341
+\pgf@sys@shading@range@num=\count342
+\pgf@shadingcount=\count343
 )
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eimage.code.tex
@@ -705,7 +705,7 @@ File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eexternal.code.tex
 File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfexternal@startupbox=\box70
+\pgfexternal@startupbox=\box71
 )
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 elayers.code.tex
@@ -726,7 +726,7 @@ File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 shapes.code.tex
 File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfnodeparttextbox=\box71
+\pgfnodeparttextbox=\box72
 )
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 plot.code.tex
@@ -756,8 +756,8 @@ code.tex
 Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
 \pgffor@iter=\dimen301
 \pgffor@skip=\dimen302
-\pgffor@stack=\toks51
-\pgffor@toks=\toks52
+\pgffor@stack=\toks54
+\pgffor@toks=\toks55
 ))
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z\tikz.code.tex
@@ -766,7 +766,7 @@ Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
 aryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@plot@mark@count=\count342
+\pgf@plot@mark@count=\count344
 \pgfplotmarksize=\dimen303
 )
 \tikz@lastx=\dimen304
@@ -777,23 +777,23 @@ File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \tikz@lastmovetoy=\dimen309
 \tikzleveldistance=\dimen310
 \tikzsiblingdistance=\dimen311
-\tikz@figbox=\box72
-\tikz@figbox@bg=\box73
-\tikz@tempbox=\box74
-\tikz@tempbox@bg=\box75
-\tikztreelevel=\count343
-\tikznumberofchildren=\count344
-\tikznumberofcurrentchild=\count345
-\tikz@fig@count=\count346
+\tikz@figbox=\box73
+\tikz@figbox@bg=\box74
+\tikz@tempbox=\box75
+\tikz@tempbox@bg=\box76
+\tikztreelevel=\count345
+\tikznumberofchildren=\count346
+\tikznumberofcurrentchild=\count347
+\tikz@fig@count=\count348
 
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 matrix.code.tex
 File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfmatrixcurrentrow=\count347
-\pgfmatrixcurrentcolumn=\count348
-\pgf@matrix@numberofcolumns=\count349
+\pgfmatrixcurrentrow=\count349
+\pgfmatrixcurrentcolumn=\count350
+\pgf@matrix@numberofcolumns=\count351
 )
-\tikz@expandcount=\count350
+\tikz@expandcount=\count352
 
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibrarytopaths.code.tex
@@ -811,22 +811,22 @@ File: pgflibraryarrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
 Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
 \multirow@colwidth=\skip65
-\multirow@cntb=\count351
+\multirow@cntb=\count353
 \multirow@dima=\skip66
 \bigstrutjot=\dimen313
 )
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
-\lst@mode=\count352
-\lst@gtempboxa=\box76
-\lst@token=\toks53
-\lst@length=\count353
+\lst@mode=\count354
+\lst@gtempboxa=\box77
+\lst@token=\toks56
+\lst@length=\count355
 \lst@currlwidth=\dimen314
-\lst@column=\count354
-\lst@pos=\count355
+\lst@column=\count356
+\lst@pos=\count357
 \lst@lostspace=\dimen315
 \lst@width=\dimen316
-\lst@newlines=\count356
-\lst@lineno=\count357
+\lst@newlines=\count358
+\lst@lineno=\count359
 \lst@maxwidth=\dimen317
 
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
@@ -834,20 +834,24 @@ File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
 )
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
-\c@lstnumber=\count358
-\lst@skipnumbers=\count359
-\lst@framebox=\box77
+\c@lstnumber=\count360
+\lst@skipnumbers=\count361
+\lst@framebox=\box78
 )
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
 File: listings.cfg 2024/09/23 1.10c listings configuration
 ))
 Package: listings 2024/09/23 1.10c (Carsten Heinz)
-\c@hyp=\count360
+\c@hyp=\count362
 
-(C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
-tex.def
-File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count361
+(C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-dvi
+ps.def
+File: l3backend-dvips.def 2025-06-09 L3 backend support: dvips
+\l__pdfannot_backend_content_box=\box79
+\l__pdfannot_backend_model_box=\box80
+\g__pdfannot_backend_int=\count363
+\g__pdfannot_backend_link_int=\count364
+\g__pdfannot_backend_link_sf_int=\count365
 ) (PS01_answers_KC.aux)
 \openout1 = `PS01_answers_KC.aux'.
 
@@ -869,52 +873,27 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 68.
 LaTeX Font Info:    ... okay on input line 68.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 68.
 LaTeX Font Info:    ... okay on input line 68.
+Package hyperref Info: Link coloring OFF on input line 68.
+ (PS01_answers_KC.out) (PS01_answers_KC.out)
+\@outlinefile=\write7
+\openout7 = `PS01_answers_KC.out'.
 
-(C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
-ii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count362
-\scratchdimen=\dimen318
-\scratchbox=\box78
-\nofMPsegments=\count363
-\nofMParguments=\count364
-\everyMPshowfont=\toks54
-\MPscratchCnt=\count365
-\MPscratchDim=\dimen319
-\MPnumerator=\count366
-\makeMPintoPDFobject=\count367
-\everyMPtoPDFconversion=\toks55
-)
-(C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
-ase.sty
-Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
 
-(C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
-fg
-File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
-))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 68.
 
- (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
+\c@lstlisting=\count366
+LaTeX Font Info:    Trying to load font information for U+msa on input line 70.
+
+(C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 68.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 70.
 
 
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Package xypdf Info: Line width: 0.47998pt on input line 68.
-Package hyperref Info: Link coloring OFF on input line 68.
-
-(PS01_answers_KC.out) (PS01_answers_KC.out)
-\@outlinefile=\write7
-\openout7 = `PS01_answers_KC.out'.
-
-\c@lstlisting=\count368
-
 (C:\Users\unity\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2024/09/23 1.10c listings language file
 )
@@ -944,9 +923,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--90
 
 [1
 
-{C:/Users/unity/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-(PS01_answers_KC.R) (PS01_answers_KC.R) (PS01_answers_KC.R) (PS01_answers_KC.R)
-(PS01_answers_KC.R) (PS01_answers_KC.R)
+] (PS01_answers_KC.R) (PS01_answers_KC.R) (PS01_answers_KC.R)
+(PS01_answers_KC.R) (PS01_answers_KC.R) (PS01_answers_KC.R)
 
 [2] (PS01_answers_KC.R) (PS01_answers_KC.R) (PS01_answers_KC.R)
 
@@ -965,42 +943,94 @@ Underfull \hbox (badness 10000) in paragraph at lines 191--192
 [4] (PS01.R)
 
 [5] (PS01_answers_KC.R)
-<US_Social_Welfare_Expenditures.png, id=77, 606.46574pt x 432.4155pt>
-File: US_Social_Welfare_Expenditures.png Graphic file (type png)
-<use US_Social_Welfare_Expenditures.png>
-Package pdftex.def Info: US_Social_Welfare_Expenditures.png  used on input line
- 253.
-(pdftex.def)             Requested size: 469.75502pt x 334.9536pt.
+
+! LaTeX Error: Cannot determine size of graphic in US_Social_Welfare_Expenditur
+es.png (no BoundingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.253 ...idth]{US_Social_Welfare_Expenditures.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: US_Social_Welfare_Expenditures.png Graphic file (type eps)
+<US_Social_Welfare_Expenditures.png>
+
+[6]
+
+[7]
+
+[8] (PS01_answers_KC.R)
+
+! LaTeX Error: Cannot determine size of graphic in Expenditure_By_Region.png (n
+o BoundingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.278 ...th=\textwidth]{Expenditure_By_Region.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: Expenditure_By_Region.png Graphic file (type eps)
+<Expenditure_By_Region.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-[6 <./US_Social_Welfare_Expenditures.png>]
 
-[7] (PS01_answers_KC.R)
-<Expenditure_By_Region.png, id=91, 576.35326pt x 432.4155pt>
-File: Expenditure_By_Region.png Graphic file (type png)
-<use Expenditure_By_Region.png>
-Package pdftex.def Info: Expenditure_By_Region.png  used on input line 278.
-(pdftex.def)             Requested size: 469.75502pt x 352.43861pt.
+[9] (PS01_answers_KC.R)
 
+! LaTeX Error: Cannot determine size of graphic in Expenditure_By_Income.png (n
+o BoundingBox).
 
-[8 <./Expenditure_By_Region.png>] (PS01_answers_KC.R)
-<Expenditure_By_Income.png, id=105, 576.35326pt x 494.44725pt>
-File: Expenditure_By_Income.png Graphic file (type png)
-<use Expenditure_By_Income.png>
-Package pdftex.def Info: Expenditure_By_Income.png  used on input line 291.
-(pdftex.def)             Requested size: 469.75502pt x 402.99736pt.
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.291 ...th=\textwidth]{Expenditure_By_Income.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
+File: Expenditure_By_Income.png Graphic file (type eps)
+<Expenditure_By_Income.png>
 
-[9 <./Expenditure_By_Income.png>] (PS01_answers_KC.R)
-<Expenditure_By_Income_With_Region.png, id=118, 576.35326pt x 432.4155pt>
-File: Expenditure_By_Income_With_Region.png Graphic file (type png)
-<use Expenditure_By_Income_With_Region.png>
-Package pdftex.def Info: Expenditure_By_Income_With_Region.png  used on input l
-ine 302.
-(pdftex.def)             Requested size: 469.75502pt x 352.43861pt.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-[10 <./Expenditure_By_Income_With_Region.png>] (PS01_answers_KC.aux)
+
+[10]
+
+[11] (PS01_answers_KC.R)
+
+! LaTeX Error: Cannot determine size of graphic in Expenditure_By_Income_With_R
+egion.png (no BoundingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.302 ...h]{Expenditure_By_Income_With_Region.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: Expenditure_By_Income_With_Region.png Graphic file (type eps)
+<Expenditure_By_Income_With_Region.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+[12]
+
+[13] (PS01_answers_KC.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
@@ -1009,29 +1039,12 @@ Package rerunfilecheck Info: File `PS01_answers_KC.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 27404 strings out of 468129
- 482022 string characters out of 5430612
- 1183502 words of memory out of 5000000
- 55442 multiletter control sequences out of 15000+600000
+ 26622 strings out of 468130
+ 472251 string characters out of 5430638
+ 1179492 words of memory out of 5000000
+ 54757 multiletter control sequences out of 15000+600000
  637918 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,6n,91p,3249b,2131s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\unity\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
-1000.pk> <C:\Users\unity\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\tcrm1200.pk><C:/Users/unity/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmbx12.pfb><C:/Users/unity/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmmi10.pfb><C:/Users/unity/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/unity/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/unity/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/unity/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/unit
-y/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Use
-rs/unity/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pf
-b><C:/Users/unity/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmtt12.pfb>
-Output written on PS01_answers_KC.pdf (10 pages, 213301 bytes).
-PDF statistics:
- 198 PDF objects out of 1000 (max. 8388607)
- 77 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 84i,6n,91p,1206b,2120s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
+Output written on PS01_answers_KC.dvi (13 pages, 84100 bytes).

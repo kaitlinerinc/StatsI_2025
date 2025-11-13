@@ -179,7 +179,7 @@ Coefficients:
 	
 		\noindent $$ \hat{Y} = 0.3880X + 0.4413 $$
 		
-		\noindent In the equation, Y-hat represents the predicted value of the vote share of the president candidate of the incumbent party, and X represents the incumbent's electoral success.
+		\noindent In the equation, Y-hat represents the predicted value of the vote share of the presidential candidate of the incumbent party, and X represents the incumbent's electoral success.
 		
 	\end{enumerate}
 	\vspace{.25cm}
@@ -239,7 +239,7 @@ Coefficients:
 	
 		\vspace{.25cm}
 	
-		\noindent The residuals from Question 1 represent the part of voteshare that cannot be linearly explained by difflog. The residuals from Question 2 represent the presvote that cannot be linearly explained by difflog. In Question 4, we are looking for a linear relationship between the 2 residuals and we got the coefficient 0.25688, which represents the impact of presvote on vote share if you take out the affect of difflog on presvote and take out the impact of difflog on vote share. In Question 5, 0.25688 represents the impact of presvote on voteshare, assuming that difflog and presvote are uncorrelated. Therefore, since in both cases the variable represents the impact of presvote on voteshare with no impact of difflog, the coefficients are the same. Following this logic, if I were to do a summary of the linear regressions, it would show that the standard errors are also the same.
+		\noindent The residuals from Question 1 represent the part of voteshare that cannot be linearly explained by difflog. The residuals from Question 2 represent the part of presvote that cannot be linearly explained by difflog. In Question 4, we are looking for a linear relationship between the 2 residuals and we got the coefficient 0.25688, which represents the impact of presvote on vote share if you take out the impact of difflog. In Question 5, 0.25688 represents the impact of presvote on voteshare, linearly adjusting for difflog, assuming that difflog and presvote are uncorrelated. Therefore, since in both cases the variable represents the impact of presvote on voteshare without the impact of difflog, the coefficients are the same. Following this logic, if I were to do a summary of the linear regressions, it would show that the standard errors of the coefficients are also the same.
 		
 		
 		

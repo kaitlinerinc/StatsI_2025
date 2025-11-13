@@ -97,7 +97,7 @@ Coefficients:
 		\item Make a scatterplot of the two variables and add the regression line.
 		\lstinputlisting[language=R, firstline=43, lastline=51]{PS03_answersKC.R}
 		\begin{figure} [h]
-			\includegraphics[width=\textwidth]{Question_1_scatterplot.jpeg}
+		\centering	\includegraphics[width=0.88\textwidth]{Question_1_scatterplot.jpeg}
 		\end{figure}
 		
 		\item Save the residuals of the model in a separate object.
@@ -106,15 +106,14 @@ Coefficients:
 		\item Write the prediction equation.
 	    
 	    \noindent The numbers representing the slope and y-intercept are taken from the linear regression run in R.
-		\noindent $$\hat{y} = 0.04167x + 0.57903 $$
-		\noindent In the equation, y-hat represents the predicted value of the incumbent's vote share, and x represents the difference in campaign spending between incumbent and challenger.
+		\noindent $$\hat{Y} = 0.04167X + 0.57903 $$
+		\noindent In the equation, Y-hat represents the predicted value of the incumbent's vote share, and X represents the difference in campaign spending between incumbent and challenger.
 		
 	\end{enumerate}
 	
 \newpage
 
 \section*{Question 2}
-\vspace{.25cm}
 \noindent We are interested in knowing how the difference between incumbent and challenger's spending and the vote share of the presidential candidate of the incumbent's party are related.
 	\begin{enumerate}
 		\item Run a regression where the outcome variable is \texttt{presvote} and the explanatory variable is \texttt{difflog}.
@@ -128,12 +127,12 @@ Coefficients:
 (Intercept)      difflog  
     0.50758      0.02384  
 		\end{verbatim}
-        \vspace{.25cm}
 		\item Make a scatterplot of the two variables and add the regression line.
 		\lstinputlisting[language=R, firstline=67, lastline=73]{PS03_answersKC.R}
 
 		\begin{figure} [h]
-			\includegraphics[width=\textwidth]{Question_2_scatterplot.jpeg}
+			\centering
+			\includegraphics[width=0.88\textwidth]{Question_2_scatterplot.jpeg}
 		\end{figure}
 	    \newpage
 		\item Save the residuals of the model in a separate object.
@@ -144,12 +143,12 @@ Coefficients:
 		
 		\noindent The numbers representing the slope and y-intercept are taken from the linear regression run in R.
 		
-		$$ \hat{y} = .023837x + 0.507583 $$
+		$$ \hat{Y} = .02384X + 0.50758 $$
 		
-		\noindent In the equation, y-hat represents the predicted value of vote share of the presidential candidate of the incumbent party, and x represents the difference between incumbent's and challenger's spending.
+		\noindent In the equation, Y-hat represents the predicted value of vote share of the presidential candidate of the incumbent party, and X represents the difference between incumbent's and challenger's spending.
 		
 	\end{enumerate}
-	
+	\vspace{.25cm}
 \section*{Question 3}
 
 \noindent We are interested in knowing how the vote share of the presidential candidate of the incumbent's party is associated with the incumbent's electoral success.
@@ -170,25 +169,26 @@ Coefficients:
         \lstinputlisting[language=R, firstline=90, lastline=96]{PS03_answersKC.R}
 
 \begin{figure} [h]
-	\includegraphics[width=\textwidth]{Question_3_scatterplot.jpeg}
+    \centering
+	\includegraphics[width=0.88\textwidth]{Question_3_scatterplot.jpeg}
 \end{figure}
 
 		\item Write the prediction equation.
 	
 	\noindent The numbers representing the slope and y-intercept are taken from the linear regression run in R.
 	
-		\noindent $$ \hat{y} = 0.3880x + 0.4413 $$
+		\noindent $$ \hat{Y} = 0.3880X + 0.4413 $$
 		
-		\noindent In the equation, y-hat represents the predicted value of the incumbent's electoral success, and x represents the vote share of the presidential candidate of the incumbent's party.
+		\noindent In the equation, Y-hat represents the predicted value of the vote share of the president candidate of the incumbent party, and X represents the incumbent's electoral success.
 		
 	\end{enumerate}
-	
-\newpage	
+	\vspace{.25cm}
 \section*{Question 4}
 \noindent The residuals from part (a) tell us how much of the variation in \texttt{voteshare} is $not$ explained by the difference in spending between incumbent and challenger. The residuals in part (b) tell us how much of the variation in \texttt{presvote} is $not$ explained by the difference in spending between incumbent and challenger in the district.
 	\begin{enumerate}
 		\item Run a regression where the outcome variable is the residuals from Question 1 and the explanatory variable is the residuals from Question 2.
 		\lstinputlisting[language=R, firstline=104, lastline=104]{PS03_answersKC.R}
+		\newpage
 		\begin{verbatim}
 Call:
 lm(formula = residuals1 ~ residuals2, data = inc.sub)
@@ -200,12 +200,15 @@ Coefficients:
 		
 		\item Make a scatterplot of the two residuals and add the regression line.
 		\begin{figure} [h]
-			\includegraphics[width=\textwidth]{Question_4_scatterplot.jpeg}
+			\centering
+			\includegraphics[width=0.88\textwidth]{Question_4_scatterplot.jpeg}
 		\end{figure}
 		
 		\item Write the prediction equation.
 		
-		\noindent y = 0.256877012700097440145x - 0.000000000000000005934 
+		\noindent $$ \hat{Y} = 0.256877012700097440145X - 0.000000000000000005934 $$ 
+		
+		\noindent In the equation, Y-hat represents the predicted value of the variation in voteshare that is not explained by the difference in spending between incumbent and challenger and X represents the variation in presvote not explained by the difference in spending between incumbent and challenger in the district.
 	\end{enumerate}
 	
 	\newpage	
@@ -227,14 +230,16 @@ Coefficients:
 		
 		\noindent The numbers representing the slope and y-intercept are taken from the linear regression run in R.
 		
-		\noindent $$\hat{y} = 0.44864 + 0.03554x1 + 0.25688x2 $$
+		\noindent $$\hat{Y} = 0.44864 + 0.03554X_{1} + 0.25688X_{2} $$
 	
-    	\noindent In the prediction equation, y-hat represents the predicted value of the incumbent's vote share, x1 represents the difference in spending between incumbent and challenger, and x2 represents the president's popularity.
+    	\noindent In the prediction equation, Y-hat represents the predicted value of the incumbent's vote share, X1 represents the difference in spending between incumbent and challenger, and X2 represents the president's popularity.
 	
 		\vspace{.25cm}
 		\item What is it in this output that is identical to the output in Question 4? Why do you think this is the case?
-		
-		\noindent 
+	
+		\vspace{.25cm}
+	
+		\noindent The residuals from Question 1 represent the part of voteshare that cannot be linearly explained by difflog. The residuals from Question 2 represent the presvote that cannot be linearly explained by difflog. In Question 4, we are looking for a linear relationship between the 2 residuals and we got the coefficient 0.25688, which represents the impact of presvote on vote share if you take out the affect of difflog on presvote and take out the impact of difflog on vote share. In Question 5, 0.25688 represents the impact of presvote on voteshare, assuming that difflog and presvote are uncorrelated. Therefore, since in both cases the variable represents the impact of presvote on voteshare with no impact of difflog, the coefficients are the same. Following this logic, if I were to do a summary of the linear regressions, it would show that the standard errors are also the same.
 		
 		
 		

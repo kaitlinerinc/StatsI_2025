@@ -145,7 +145,7 @@ Coefficients:
 		
 		$$ \hat{Y} = .02384X + 0.50758 $$
 		
-		\noindent In the equation, Y-hat represents the predicted value of vote share of the presidential candidate of the incumbent party, and X represents the difference between incumbent's and challenger's spending.
+		\noindent In the equation, Y-hat represents the predicted value of vote share of the presidential candidate of the incumbent's party, and X represents the difference between incumbent and challenger's spending.
 		
 	\end{enumerate}
 	\vspace{.25cm}
@@ -199,6 +199,7 @@ Coefficients:
 		\end{verbatim}
 		
 		\item Make a scatterplot of the two residuals and add the regression line.
+		\lstinputlisting[language=R, firstline=107, lastline=113]{PS03_answersKC.R}
 		\begin{figure} [h]
 			\centering
 			\includegraphics[width=0.88\textwidth]{Question_4_scatterplot.jpeg}
@@ -208,7 +209,7 @@ Coefficients:
 		
 		\noindent $$ \hat{Y} = 0.256877012700097440145X - 0.000000000000000005934 $$ 
 		
-		\noindent In the equation, Y-hat represents the predicted value of the variation in voteshare that is not explained by the difference in spending between incumbent and challenger and X represents the variation in presvote not explained by the difference in spending between incumbent and challenger in the district.
+		\noindent In the equation, Y-hat represents the predicted value of the variation in voteshare that is not explained by the difference in spending between incumbent and challenger and X represents the variation in presvote not explained by the difference in spending between incumbent and challenger in the district. In other words, this regression shows the linear impact of presvote on voteshare if the linear impact of difflog is removed.
 	\end{enumerate}
 	
 	\newpage	
@@ -239,7 +240,7 @@ Coefficients:
 	
 		\vspace{.25cm}
 	
-		\noindent The residuals from Question 1 represent the part of voteshare that cannot be linearly explained by difflog. The residuals from Question 2 represent the part of presvote that cannot be linearly explained by difflog. In Question 4, we are looking for a linear relationship between the 2 residuals and we got the coefficient 0.25688, which represents the impact of presvote on vote share if you take out the impact of difflog. In Question 5, 0.25688 represents the impact of presvote on voteshare, linearly adjusting for difflog, assuming that difflog and presvote are uncorrelated. Therefore, since in both cases the variable represents the impact of presvote on voteshare without the impact of difflog, the coefficients are the same. Following this logic, if I were to do a summary of the linear regressions, it would show that the standard errors of the coefficients are also the same.
+		\noindent The coefficient for presvote, 0.25688, is identical to the output in Question 4. The residuals from Question 1 represent the part of voteshare that cannot be linearly explained by difflog. The residuals from Question 2 represent the part of presvote that cannot be linearly explained by difflog. In Question 4, we are looking for a linear relationship between the residuals and we got the coefficient 0.25688, which represents the impact of presvote on vote share if you take out the impact of difflog. In Question 5, 0.25688 represents the impact of presvote on voteshare, linearly adjusting for difflog, assuming that difflog and presvote are uncorrelated. Therefore, since in both cases the variable represents the impact of presvote on voteshare without the impact of difflog, the coefficients are the same. Following this logic, if I were to do a summary of the linear regressions, it would show that the standard errors of the coefficients are also the same.
 		
 		
 		

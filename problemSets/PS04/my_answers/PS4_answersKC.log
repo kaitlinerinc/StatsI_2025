@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.2)  27 NOV 2025 23:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.2)  27 NOV 2025 23:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -944,13 +944,13 @@ LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
 (PS04_answersKC.R)
 
 [2] (PS04_answersKC.R) (PS04_answersKC.R)
+
+[3]
 Underfull \hbox (badness 10000) in paragraph at lines 190--191
 
  []
 
 
-
-[3]
 Underfull \hbox (badness 10000) in paragraph at lines 192--194
 
  []
@@ -995,7 +995,7 @@ r8.pfb><C:/Users/unity/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
 s/cm/cmsy10.pfb><C:/Users/unity/AppData/Local/Programs/MiKTeX/fonts/type1/publi
 c/amsfonts/cm/cmti10.pfb><C:/Users/unity/AppData/Local/Programs/MiKTeX/fonts/ty
 pe1/public/amsfonts/cm/cmtt12.pfb>
-Output written on PS4_answersKC.pdf (7 pages, 172012 bytes).
+Output written on PS4_answersKC.pdf (7 pages, 172153 bytes).
 PDF statistics:
  155 PDF objects out of 1000 (max. 8388607)
  40 named destinations out of 1000 (max. 500000)

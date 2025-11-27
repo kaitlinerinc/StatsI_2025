@@ -135,24 +135,24 @@ income:professional
 
 	\noindent For every one unit increase in income there is a 0.003171 increase in prestige on average. However, this interpretation is only true if the dummy variable professional equals 0. Otherwise, the coefficient for income should be interpreted with the interaction effect.
 
-	In this case, we have a coefficient of -0.002326 for interaction, which when added to the income coefficient 0.003171 results in 0.0008452. Therefore, if the dummy variable equals 1, we should say that on average for every one unit increase in income there is a 0.0008452 increase in prestige.
+	In this case, we have a coefficient of -0.002326 for interaction, which when added to the income coefficient 0.003171 results in 0.000845. Therefore, if the dummy variable equals 1, we should say that on average for every one unit increase in income there is a 0.000845 increase in prestige.
 	
 	\newpage
 	\item [(e)]
 	Interpret the coefficient for \texttt{professional}.
 	
-	\vspace{.2cm}
+	\vspace{.1cm}
 
 	\noindent For a one unit increase in professional (which represents the change from a blue or white collar job to a professional job) there is a 37.7812800 increase in prestige on average if income = 0. Otherwise, the coefficient for professional should be interpreted with the interaction effect and the effect will vary depending on the value of income.
 	
 	\item [(f)]
 	What is the effect of a \$1,000 increase in income on prestige score for professional occupations? In other words, we are interested in the marginal effect of income when the variable \texttt{professional} takes the value of $1$. Calculate the change in $\hat{y}$ associated with a \$1,000 increase in income based on your answer for (c).
 	
-	\vspace{.2cm}
+	\vspace{.1cm}
 	
-	\noindent Predicted Prestige = 21.1422589 + 0.0031709 * income + 37.7812800  * professional + (-0.0023257) * interaction
+	\noindent Predicted Prestige = 21.1422589 + 0.0031709 * income + 37.7812800  * professional + (-0.0023257) * (income * professional)
 	
-	\noindent In this example, the marginal effect equals the coefficient for income + the interaction coefficient * 1,000 (because we are looking at the impact of a 1,000 dollar increase in income). By including the interaction coefficient (multiplied 1), we are holding the dummy variable at 1 because a dummy variable of 0 would have resulted in an interaction effect of 0. So to find the change in y for a 1,000 dollar increase in income, we do (0.0031709 - 0.0023257) * 1,000, which equals 0.8452. So, for a 1,000 dollar increase in income for professionals, we would expect a 0.8452 increase in prestige.
+	\noindent In this example, the marginal effect equals the coefficient for income + the interaction coefficient * 1,000 (because we are looking at the impact of a 1,000 dollar increase in income). By including the interaction coefficient (multiplied by 1), we are holding the dummy variable at 1 because a dummy variable of 0 would have resulted in an interaction effect of 0. So to find the change in y for a 1,000 dollar increase in income, we do (0.0031709 - 0.0023257) * 1,000, which equals 0.8452. So, for a 1,000 dollar increase in income for professionals, we would expect a 0.8452 increase in prestige.
 	
 	\lstinputlisting[language=R, firstline=47, lastline=47]{PS04_answersKC.R}
 	\begin{verbatim}
@@ -162,11 +162,11 @@ income:professional
 	\item [(g)]
 	What is the effect of changing one's occupations from non-professional to professional when her income is \$6,000? We are interested in the marginal effect of professional jobs when the variable \texttt{income} takes the value of $6,000$. Calculate the change in $\hat{y}$ based on your answer for (c).
 	
-	\vspace{.2cm}
+	\vspace{.1cm}
 	
-	\noindent Predicted Prestige = 21.1422589 + 0.0031709 * income + 37.7812800  * professional + (-0.0023257) * interaction
+	\noindent Predicted Prestige = 21.1422589 + 0.0031709 * income + 37.7812800  * professional + (-0.0023257) * (income * professional)
 	
-	\noindent To find the marginal effect of professional jobs when the variable income takes the value of 6,000, I added the coefficient for professional jobs to the interaction effect * 6000. When substituting in the numbers the equation was 37.7812800 + (-0.0023257 * 6000), which equals 23.82708
+	\noindent To find the marginal effect of professional jobs when the variable income takes the value of 6,000, I added the coefficient for professional jobs to the interaction effect * 6000. When substituting in the numbers the equation was 37.7812800 + (-0.0023257 * 6000), which equals 23.82708. So, if income takes the value of 6,000, we would expect the average difference between prestige for a blue/white collar job and prestige for a professional job to be 23.82708.
 	
 	\lstinputlisting[language=R, firstline=49, lastline=49]{PS04_answersKC.R}
 	
